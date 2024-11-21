@@ -1,26 +1,31 @@
-
-/* Your CSS Code here. */
-body {
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    flex-wrap: wrap; 
-    justify-content: space-between;
-    align-items: center; 
-    padding: 10px;
-    box-sizing: border-box; 
-    height: 100vh; 
+    box-sizing: border-box;
 }
 
-div {
-    flex: 0 1 calc(25% - 20px);
-    margin: 10px; 
-    background-color: lightblue; 
+.holder {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between; 
+    padding: 10px; 
+}
+
+.item {
+    flex: 0 1 calc(20% - 10px); 
+    margin: 5px; 
     text-align: center; 
-    padding: 20px; 
+    padding: 20px;
+    background-color: lightblue; 
     border-radius: 5px; 
-    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
     font-family: Arial, sans-serif; 
-    font-size: 20px; 
+    font-size: 18px; 
     font-weight: bold; 
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2); 
+}
+
+@media (max-width: 600px) {
+    .item {
+        flex: 0 1 calc(45% - 10px); 
+    }
 }
